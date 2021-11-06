@@ -8,25 +8,25 @@ const Language = require('../language');
 const Lang = Language.getString('_xtroid');
 const logo = fs.readFileSync('./media/logo/free.png')  
 const pro = `
-👑 *New Items* 👑
+👑 *MY New Command* 👑
 ────────────────
 
-  🧊 *Cmd :* .spack trial 
+  🎯 *Cmd :* .spack trial 
   🎐 *Desc :* Fully unlocked sticker 
           pack 
 
-  🧊 *Cmd :* .npack trial
+  🎯 *Cmd :* .npack trial
   🎐 *Desc :* Premium logo pack 
 
-  🧊 *Cmd :* .epack trial
+  🎯 *Cmd :* .epack trial
   🎐 *Desc :* Fully unlocked logo pack 
 
 
-  🧊 *Cmd :* .mpack trial
+  🎯 *Cmd :* .mpack trial
   🎐 *Desc :*  Fully unlocked meme 
          pack
 
-  🧊 *Cmd :* .menu comming soon
+  🎯 *Cmd :* .menu comming soon
   🎐 *Desc :*  Custom menu.
    ────────────────`
 
