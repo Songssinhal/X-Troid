@@ -12,22 +12,22 @@ const pro = `
 ────────────────
 
   🎯 *Cmd :* .spack trial 
-  🎐 *Desc :* Fully unlocked sticker 
+  🔥 *Desc :* Fully unlocked sticker 
           pack 
 
   🎯 *Cmd :* .npack trial
-  🎐 *Desc :* Premium logo pack 
+  🔥 *Desc :* Premium logo pack 
 
   🎯 *Cmd :* .epack trial
-  🎐 *Desc :* Fully unlocked logo pack 
+  🔥 *Desc :* Fully unlocked logo pack 
 
 
   🎯 *Cmd :* .mpack trial
-  🎐 *Desc :*  Fully unlocked meme 
+  🔥 *Desc :*  Fully unlocked meme 
          pack
 
   🎯 *Cmd :* .menu comming soon
-  🎐 *Desc :*  Custom menu.
+  🔥 *Desc :*  Custom menu.
    ────────────────`
 
 if (Config.WORKTYPE == 'private') {
@@ -122,7 +122,7 @@ else if (Config.WORKTYPE == 'public') {
                 CMD_HELP +='' + Config.MENU_EMOJI+ ' *Cmd :* ' + (match.length >= 3 ? (HANDLER + match[2]) : command.pattern) + (command.desc === '' ? '\n' : '\n');
                 if (command.desc !== '') CMD_HELP += Config.DESC_EMOJI+ ' *Desc :* ' + command.desc + (command.warn === '' ? '\n\n' : '\n');
                 if (command.usage !== '') CMD_HELP += '*🀄️ ' + Lang.EXAMPLE + ':* ' + command.usage + '\n\n';
-                if (command.warn !== '') CMD_HELP += '*⚠️ ' + Lang.WARN + ':* ' + command.warn + '\n\n';
+                if (command.warn !== '') CMD_HELP += '*⚠️❗️ ' + Lang.WARN + ':* ' + command.warn + '\n\n';
 
             }
         );
@@ -151,7 +151,7 @@ else if (Config.WORKTYPE == 'public') {
                     CMD_HELP +='' + Config.MENU_EMOJI+ ' *Cmd :* ' + (match.length >= 3 ? (HANDLER + match[2]) : command.pattern) + (command.desc === '' ? '\n' : '\n');
                     if (command.desc !== '') CMD_HELP += Config.DESC_EMOJI+ ' *Desc :* ' + command.desc + (command.warn === '' ? '\n\n' : '\n');
                     if (command.usage !== '') CMD_HELP += '*🀄️ ' + Lang.EXAMPLE + ':* ' + command.usage + '\n\n';
-                    if (command.warn !== '') CMD_HELP += '*⚠️ ' + Lang.WARN + ':* ' + command.warn + '\n\n';
+                    if (command.warn !== '') CMD_HELP += '*⚠️❗️ ' + Lang.WARN + ':* ' + command.warn + '\n\n';
     
                 }
             }
@@ -184,7 +184,7 @@ XTroid.addCMD({pattern: 'x ?(.*)', fromMe: true, dontAddCMDList: true}, (async (
                 CMD_HELP +='' + Config.MENU_EMOJI+ ' *Cmd :* ' + (match.length >= 3 ? (HANDLER + match[2]) : command.pattern) + (command.desc === '' ? '\n' : '\n');
                 if (command.desc !== '') CMD_HELP += Config.DESC_EMOJI+ ' *Desc :* ' + command.desc + (command.warn === '' ? '\n\n' : '\n');
                 if (command.usage !== '') CMD_HELP += '*🀄️ ' + Lang.EXAMPLE + ':* ' + command.usage + '\n\n';
-                if (command.warn !== '') CMD_HELP += '*⚠️ ' + Lang.WARN + ':* ' + command.warn + '\n\n';
+                if (command.warn !== '') CMD_HELP += '*⚠️❗️ ' + Lang.WARN + ':* ' + command.warn + '\n\n';
 
             }
         );
@@ -213,14 +213,14 @@ XTroid.addCMD({pattern: 'x ?(.*)', fromMe: true, dontAddCMDList: true}, (async (
                     CMD_HELP +='' + Config.MENU_EMOJI+ ' *Cmd :* ' + (match.length >= 3 ? (HANDLER + match[2]) : command.pattern) + (command.desc === '' ? '\n' : '\n');
                     if (command.desc !== '') CMD_HELP += Config.DESC_EMOJI+ ' *Desc :* ' + command.desc + (command.warn === '' ? '\n\n' : '\n');
                     if (command.usage !== '') CMD_HELP += '*🀄️ ' + Lang.EXAMPLE + ':* ' + command.usage + '\n\n';
-                    if (command.warn !== '') CMD_HELP += '*⚠️ ' + Lang.WARN + ':* ' + command.warn + '\n\n';
+                    if (command.warn !== '') CMD_HELP += '*⚠️❗️ ' + Lang.WARN + ':* ' + command.warn + '\n\n';
     
                 }
             }
         );
         if (CMD_HELP === '') CMD_HELP += Lang.NOT_FOUND;
         await message.client.sendMessage(
-                message.jid,'✥▬▬ *'+Config.MENUTEXT+'* ▬▬✥\n\n\n' + CMD_HELP, MessageType.text
+                message.jid,'✥▬▬🌀 *'+Config.MENUTEXT+'* 🌀▬▬✥\n\n\n' + CMD_HELP, MessageType.text
             );
     }
 }));
