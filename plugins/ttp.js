@@ -115,13 +115,13 @@ XTroid.addCMD({pattern: 'lpack$', fromMe: wk, desc: desc_msg}, (async (message, 
     var command_cmd = ''
     var desc_cmd = ''
     if (Config.LANG == 'SI') {
-        usage_cmd = '🍀 *උදා :* _'
-        command_cmd = '💞 *විධානය :* '
+        usage_cmd = '🎲 *උදා :* _'
+        command_cmd = '💢 *විධානය :* '
         desc_cmd = '🪶*විස්තරය :* _'
     } else { 
         usage_cmd = '🪶 Example : '
         command_cmd = '🐹 Command : '
-        desc_cmd = '🍀 Desc : '
+        desc_cmd = '🎲 Desc : '
     }
     const msg = command_cmd + '```.devil``` \n' + t1 + '_\n' + usage_cmd + '*.devil Xtroid*\n\n' +
         command_cmd + '```.bear``` \n' + desc_cmd + t2 + '_\n' + usage_cmd + '*.bear Xtroid*\n\n' +
